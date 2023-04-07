@@ -1,0 +1,87 @@
+<div class="limiter" >
+  <div class="container-login100">
+    <div class="wrap-login100">
+      <form [formGroup] = "registerForm" class="login100-form validate-form">
+					<span class="login100-form-title p-b-26">
+						Sign Up
+					</span>
+        <span class="login100-form-title p-b-48">
+
+					</span>
+
+        <div class="wrap-input100 validate-input">
+          <input formControlName="email" class="input100" type="text" name="email">
+          <span class="focus-input100" data-placeholder="Email"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+          <input formControlName="first_name" class="input100" type="text" name="first_name">
+          <span class="focus-input100" data-placeholder="First Name"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+          <input formControlName="last_name" class="input100" type="tel" name="last_name">
+          <span class="focus-input100" data-placeholder="Last Name"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+          <input formControlName="phone_number" class="input100" type="text" name="phone_number">
+          <span class="focus-input100" data-placeholder="Phone Number"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+						<span class="btn-show-pass">
+                            <i
+                              class="fa"
+                              [ngClass]="{
+                              'fa-eye-slash': !fieldTextType,
+                              'fa-eye': fieldTextType
+                            }"
+                              (click)="toggleFieldTextType()"
+                            ></i>
+						</span>
+          <input formControlName="password" class="input100" [type]="fieldTextType ? 'text':'password'" name="pass">
+          <span class="focus-input100" data-placeholder="Password"></span>
+        </div>
+        <div class="wrap-input100 validate-input">
+          <span class="btn-show-pass">
+                          <i
+                            class="fa"
+                            [ngClass]="{
+                            'fa-eye-slash': !toggleConfirm,
+                            'fa-eye': toggleConfirm
+                          }"
+                            (click)=" toggleConfirmField()"
+                          ></i>
+          </span>
+        <input formControlName="confirm" class="input100" [type]="toggleConfirm ? 'text':'password'" name="confirm">
+        <span class="focus-input100" data-placeholder="Confirm"></span>
+      </div>
+
+        <div class="container-login100-form-btn">
+          <div class="wrap-login100-form-btn">
+            <div class="login100-form-bgbtn"></div>
+            <button (click)="registerUser()" class="login100-form-btn">
+              Sign Up
+            </button>
+          </div>
+        </div>
+
+        <div class="text-center p-t-115">
+						<span class="txt1">
+							Already got an account?
+						</span>
+
+          <a class="txt2" routerLink="/login" href="#">
+            Login
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div id="dropDownSelect1"></div>
+
+
