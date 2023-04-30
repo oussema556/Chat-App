@@ -1,0 +1,12 @@
+<div class="message">
+    <div class="message__sender-image">
+      <img class="img-fluid" [src]="message.sender.image" alt="">
+    </div>
+  <div class="message__content">
+    <div class="message_infos">
+      <span class="message__sender-name">{{message.sender.name}}</span>
+      <span class="message__sent-date">{{message.sentDate|date:'shortTime'}}</span>
+    </div>
+    <p class="message_content">{{message.content}}</p>
+  </div>
+</div>
