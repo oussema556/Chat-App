@@ -7,6 +7,7 @@ import {ModulesModule} from "./modules/modules.module";
 import {ModulesRoutingModule} from "./modules/modules-routing.module";
 import {HttpClientModule} from "@angular/common/http";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReportsRoutingModule } from './modules/reports/reports-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ModulesModule,
     ModulesRoutingModule,
     HttpClientModule,
+    ReportsRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

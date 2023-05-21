@@ -1,0 +1,90 @@
+.search {
+  position: relative;
+  max-width: 48rem;
+  margin: auto;
+
+  &__input {
+    position: relative;
+  }
+
+  input {
+    width: 100%;
+    background-color: #ffffff;
+    padding: .75rem 2rem;
+    border-radius: 6px;
+    transition: .3s;
+    border: 1px white solid;
+
+    &:focus {
+      border: 1px black solid;
+    }
+
+    &:hover {
+      border: 1px gray solid;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-35%);
+    right: 1rem;
+  }
+
+  &__result {
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 8px;
+    margin-top: 1rem;
+    position: absolute;
+    padding: 2rem 1rem;
+    width: 100%;
+    z-index: 100;
+  }
+
+  &__data {
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    &__image {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    &__text {
+      margin-left: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__name {
+      font-weight: 800;
+    }
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+    }
+
+    &__add-contact {
+      border-radius: 8px;
+      background-color: black;
+      color: white;
+      transition: .3s;
+      padding: .5rem 1rem;
+
+      &:hover {
+        background-color: rgb(34, 34, 34);
+      }
+    }
+  }
+}

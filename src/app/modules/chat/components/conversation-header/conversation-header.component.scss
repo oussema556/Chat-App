@@ -1,4 +1,62 @@
-.conversation-header{
-  height: 8vh;
-  background-color: red;
+.ch{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #EEEEEE;
+  padding: 2rem 1rem;
+
+  &__info{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__text{
+    margin-left: 1rem;
+
+  }
+
+  &__name{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__status{
+    color: #707070;
+    font-size: 12px;
+    margin-top: -12px;
+  }
+  &__status-dot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border: 2px black solid;
+    background-color: #53E04E;
+    border-radius: 50%;
+  }
+  &__image{
+    position: relative;
+
+    img{
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+    }
+  }
+  &__icon{
+    padding: 1rem;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    line-height: 0;
+    &:not(first-child){
+      margin-left: 1rem;
+    }
+    svg{
+      width: 100%;
+      height: auto;
+    }
+  }
+
 }

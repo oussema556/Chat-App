@@ -4,27 +4,45 @@
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
-
 @font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  font-family: 'Inter';
+  src: url('assets/fonts/inter/Inter-Medium.ttf');
+  font-weight: 400;
+}
+@font-face {
+ font-family: 'Inter';
+ src: url('assets/fonts/inter/Inter-Light.ttf');
+ font-weight: 300;
 }
 
 @font-face {
-  font-family: Poppins-Medium;
-  src: url('/chatapp/src/assets/fonts/poppins/Poppins-Medium.ttf'); 
+ font-family: 'Inter';
+ src: url('assets/fonts/inter/Inter-ExtraLight.ttf');
+ font-weight: 200;
+}
+@font-face {
+ font-family: 'Inter';
+ src: url('assets/fonts/inter/Inter-Bold.ttf');
+ font-weight: 700;
 }
 
 @font-face {
-  font-family: Poppins-Bold;
-  src: url('/chatapp/src/assets/fonts/poppins/Poppins-Bold.ttf'); 
+ font-family: 'Inter';
+ src: url('assets/fonts/inter/Inter-Regular.ttf');
+ font-weight: 500;
 }
 
 @font-face {
-  font-family: Poppins-SemiBold;
-  src: url('/chatapp/src/assets/fonts/poppins/Poppins-SemiBold.ttf'); 
+ font-family: 'Inter';
+ src: url('assets/fonts/inter/Inter-SemiBold.ttf');
+ font-weight: 600;
 }
 
+@font-face {
+ font-family: 'Inter';
+ src: url('assets/fonts/inter/Inter-ExtraBold.ttf');
+ font-weight: 800;
+}
 
 
 
@@ -40,13 +58,13 @@
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: Inter, sans-serif;
   
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: Inter;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -76,7 +94,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family: Inter;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -143,14 +161,14 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: Poppins-Regular;
+  font-family: Inter;
   font-size: 13px;
   color: #666666;
   line-height: 1.5;
 }
 
 .txt2 {
-  font-family: Poppins-Regular;
+  font-family: Inter;
   font-size: 13px;
   color: #333333;
   line-height: 1.5;
@@ -272,7 +290,7 @@ iframe {
 }
 
 .focus-input100::after {
-  font-family: Poppins-Regular;
+  font-family: Inter;
   font-size: 15px;
   color: #999999;
   line-height: 1.2;
@@ -449,7 +467,7 @@ iframe {
   right: 0px;
   pointer-events: none;
 
-  font-family: Poppins-Regular;
+  font-family: Inter;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;

@@ -1,0 +1,12 @@
+<div class="cl">
+    <h1 class="cl__title">Your Contacts</h1>
+    <div class="cl__search">
+        <app-search-contacts></app-search-contacts>
+    </div>
+
+    <div class="cl__contacts row gap-3 mt-5">
+        <div class="cl__card col-3" *ngFor="let contact of ['','','','','','','','']">
+            <app-contact-card [contact]="contact"></app-contact-card>
+        </div>
+    </div>
+</div>
