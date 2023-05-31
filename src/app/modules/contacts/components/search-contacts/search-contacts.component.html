@@ -1,6 +1,6 @@
 <div class="search">
   <div class="search__input">
-    <input type="text" placeholder="Search for new contacts to add..." />
+    <input (focus)="searchActive()" (blur)="searchActive()" type="text" placeholder="Search for new contacts to add..." />
     <span class="search__icon">
       <svg
         width="18"
@@ -21,7 +21,7 @@
     </span>
   </div>
 
-  <div class="search__result">
+  <div *ngIf="dropdownIsOpen" class="search__result">
     <div class="search__data" *ngFor="let data of ['','','','']">
       <div>
         <div class="search__data__image">

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class SearchContactsComponent {
 
+  dropdownIsOpen:boolean= false;
+  searchActive(){
+    this.dropdownIsOpen= !this.dropdownIsOpen;
+  }
 }

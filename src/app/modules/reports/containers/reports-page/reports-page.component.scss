@@ -1,0 +1,10 @@
+.reports-page{
+  &__list{
+    margin: 1rem;
+  }
+  &__report{
+    &:not(first-child){
+      margin-top: 1rem;
+    }
+  }
+}

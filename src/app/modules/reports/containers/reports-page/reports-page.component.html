@@ -1,3 +1,14 @@
-<div class="reports">
-    
+<div class="reports-page">
+    <h1 class="reports-page__title">Your Reports</h1>
+
+  <div class="reports-page__action-bar">
+    <shared-button [button]="reportBtn">
+    </shared-button>
+  </div>
+
+  <div class="reports-page__list">
+  <div *ngFor="let report of reports" class="reports-page__report">
+    <app-report-widget [report]="report"></app-report-widget>
+  </div>
+  </div>
 </div>

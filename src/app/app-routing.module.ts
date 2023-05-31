@@ -4,20 +4,6 @@ import { ContactsListComponent } from './modules/contacts/components/contacts-li
 import { ReportsPageComponent } from './modules/reports/containers/reports-page/reports-page.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'contacts-list',
-    pathMatch: 'full',
-  },
-  {
-    path: '**',
-    redirectTo: 'contacts-list',
-    pathMatch: 'full',
-  },
-  {
-    path: 'contacts-list',
-    component: ContactsListComponent,
-  },
 ];
 
 @NgModule({

@@ -1,0 +1,25 @@
+.btn {
+  border-radius: 8px;
+  padding: .5rem 1rem;
+  font-weight: 800;
+  transition: .3s;
+  border: 2px black solid;
+
+  &--red{
+    background-color: #DB575B;
+    border-color: #DB575B;
+    color: white;
+    &:hover{
+      background-color: #cf3f44;
+      border-color: #cf3f44;
+    }
+  }
+  &--red-outline{
+    background-color: transparent;
+    border-color: #DB575B;
+    color: #DB575B;
+    &:hover{
+      background-color: rgba(207, 63, 68, 0.06);
+    }
+  }
+}

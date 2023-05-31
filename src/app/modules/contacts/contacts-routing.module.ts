@@ -4,7 +4,10 @@ import { ContactsListComponent } from "./components/contacts-list/contacts-list.
 
 
 const routes: Routes =[
-
+  {
+    path: 'contacts-list',
+    component: ContactsListComponent,
+  },
 ];
 
 @NgModule({
@@ -12,4 +15,3 @@ const routes: Routes =[
     exports: [RouterModule]
   })
   export class ContactsRoutingModule { }
-  

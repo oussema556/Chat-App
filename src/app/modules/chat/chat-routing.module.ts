@@ -4,12 +4,6 @@ import { ChatComponent } from './containers/chat/chat.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'chat', pathMatch: "full"
-  },
-  {
-    path: '**', redirectTo: 'chat', pathMatch: "full",
-  },
-  {
     path: "chat",
     component: ChatComponent
   }
