@@ -7,7 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ConversationFooterComponent {
 
-  sendMessage() {
+
+
+
+
+
+  constructor() {
+  }
+
 
   }
-}

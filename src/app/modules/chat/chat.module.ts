@@ -16,7 +16,7 @@ import { ActivityFooterComponent } from './components/activity-footer/activity-f
 import { SideSectionComponent } from './containers/side-section/side-section.component';
 import { SideSectionHeaderComponent } from './components/side-section-header/side-section-header.component';
 import { SideSectionBodyComponent } from './components/side-section-body/side-section-body.component';
-
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -39,7 +39,8 @@ import { SideSectionBodyComponent } from './components/side-section-body/side-se
   ],
   imports: [
     CommonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ]
 })
 export class ChatModule { }
