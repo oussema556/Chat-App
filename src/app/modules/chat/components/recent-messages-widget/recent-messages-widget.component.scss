@@ -1,0 +1,36 @@
+.rm-widget{
+  display: flex;
+  cursor: pointer;
+  align-items: flex-start;
+  padding: 20px 16px;
+  border-radius: 8px;
+  margin: .5rem 0;
+  transition: .1s;
+&:hover{
+  background-color: #eaeaea;
+}
+  &--active{
+    background-color: #E6EFF5;
+  }
+  &__image{
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  &__text{
+    margin-left: 1rem;
+  }
+  &__name{
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+    span{
+      font-weight: 300;
+      font-size: 8px;
+    }
+  }
+  &__latest-message{
+    font-size: 12px;
+  }
+}

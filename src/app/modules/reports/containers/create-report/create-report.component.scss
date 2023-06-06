@@ -1,0 +1,19 @@
+.create-report{
+  &__form{
+    max-width: 42rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div{
+      width: 100%;
+    }
+    button{
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+      width: 100%;
+      padding: .75rem;
+    }
+  }
+}

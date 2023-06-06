@@ -1,0 +1,16 @@
+<div class="create-report d-flex w-full h-full align-items-center justify-content-center">
+  <form [formGroup]="reportForm" class="w-full create-report__form">
+
+    <div class="wrap-input100 validate-input">
+      <input formControlName="title" class="input100" type="text" name="title" >
+      <span class="focus-input100" data-placeholder="title"></span>
+    </div>
+    <div class="wrap-input100 validate-input">
+      <input formControlName="description" class="input100" type="text" name="description" >
+      <span class="focus-input100" data-placeholder="description"></span>
+    </div>
+  <div>
+    <button (click)="createReport()">Send Report</button>
+  </div>
+  </form>
+</div>

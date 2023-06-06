@@ -1,0 +1,14 @@
+<a class="rm-widget" routerLinkActive="rm-widget--active" (click)="getConversationPath()">
+  <div class="rm-widget__image">
+    <img class="img-fluid" [src]="recentMessage.otherPerson.profileImg" alt="">
+  </div>
+  <div class="rm-widget__text">
+    <p class="rm-widget__name">
+      {{recentMessage.otherPerson.name}}
+      <span>{{"6 april"}}</span>
+    </p>
+    <p class="rm-widget__latest-message">{{recentMessage.messages[recentMessage.messages.length - 1]?.content|slice:0:50}}
+    <span *ngIf="recentMessage.messages[recentMessage.messages.length - 1]?.content.length>50">...</span>
+    </p>
+  </div>
+</a>

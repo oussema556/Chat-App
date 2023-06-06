@@ -1,0 +1,27 @@
+.rc-widget{
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 16px;
+  margin: .5rem 0;
+  border-bottom: 1px #C0C0C0 solid;
+  &__image{
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  &__text{
+    margin-left: 1rem;
+  }
+  &__name{
+    font-size: 13px;
+    font-weight: 600;
+    span{
+      font-weight: 300;
+      font-size: 8px;
+    }
+  }
+  &__latest-message{
+    font-size: 12px;
+  }
+}
