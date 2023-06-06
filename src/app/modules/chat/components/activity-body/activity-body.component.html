@@ -1,1 +1,19 @@
-<p>activity-body works!</p>
+<div class="activity-body">
+  <div class="activity-body__profile">
+    <p class="activity-body__profile__title">Profile</p>
+    <div class="activity-body__profile__content">
+      <div class="activity-body__profile__image">
+        <img class="img-fluid" [src]="conversation.users[0].picture" alt="">
+      </div>
+      <p class="activity-body__profile__name">{{conversation.users[0].name}}</p>
+    </div>
+  </div>
+  <div class="activity-body__media">
+    <p class="activity-body__media__title">Media</p>
+    <div class="activity-body__media__grid row">
+      <div *ngFor="let image of conversation.media" class="activity-body__media__grid-item grid-cols-3 m-1">
+        <img class="img-fluid" [src]="image" alt="">
+      </div>
+    </div>
+  </div>
+</div>

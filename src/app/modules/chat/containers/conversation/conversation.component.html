@@ -1,5 +1,5 @@
 <div class="conversation">
-  <chat-conversation-header></chat-conversation-header>
-  <chat-conversation-messages></chat-conversation-messages>
-  <chat-conversation-footer></chat-conversation-footer>
+  <chat-conversation-header [conversation]="conversation"></chat-conversation-header>
+  <chat-conversation-messages [conversation]="conversation"></chat-conversation-messages>
+  <chat-conversation-footer [conversationId]="conversationId"></chat-conversation-footer>
 </div>

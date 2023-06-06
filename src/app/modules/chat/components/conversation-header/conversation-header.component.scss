@@ -2,8 +2,8 @@
   display: flex;
   align-content: center;
   justify-content: space-between;
-  background-color: #EEEEEE;
   padding: 2rem 1rem;
+  border-bottom: 2px #C0C0C0 solid;
 
   &__info{
     display: flex;
@@ -17,6 +17,7 @@
 
   &__name{
     font-weight: bold;
+    text-transform: capitalize;
     font-size: 20px;
   }
   &__status{
@@ -44,11 +45,11 @@
     }
   }
   &__icon{
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    background-color: white;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(90deg, rgba(255, 245, 0, 1) 0%, rgba(180, 43, 166, 1) 100%);
     line-height: 0;
     &:not(first-child){
       margin-left: 1rem;
@@ -56,6 +57,8 @@
     svg{
       width: 100%;
       height: auto;
+      fill: white;
+      color: white;
     }
   }
 

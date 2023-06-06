@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {MessageModel} from "../../models/messageModel";
+import {MessageModel} from "../../models/message.model";
+import {ChatService} from "../../services/chat.service";
 
 @Component({
   selector: 'chat-message',
@@ -7,20 +8,10 @@ import {MessageModel} from "../../models/messageModel";
   styleUrls: ['./message.component.scss']
 })
 export class MessageComponent implements OnInit{
-    messageDemo: MessageModel = {
-      id: "1",
-      content : 'this is a really random message nothing will happen',
-      sender: {
-        id: "1",
-        image: "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/68.png",
-        name: "Oussama Bejaoui",
-        profileUrl: "#",
-      },
-      sentDate: new Date(),
-    }
 
-    @Input('message') message: MessageModel = this.messageDemo;
-
+    @Input('message') message: MessageModel;
+  constructor(private chatService: ChatService) {
+  }
   ngOnInit(): void {
   }
 }

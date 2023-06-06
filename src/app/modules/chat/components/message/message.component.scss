@@ -13,10 +13,14 @@
 
   &__content{
     margin-left: 1rem;
+    background-color: white;
+    padding: .75rem;
+    border-radius: 8px;
   }
 
   &__sender-name{
     font-size: 16px;
+    text-transform: capitalize;
     font-weight: 600;
   }
   &__sent-date{

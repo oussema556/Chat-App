@@ -3,14 +3,17 @@ import { CommonModule } from '@angular/common';
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { ButtonComponent } from './components/button/button.component';
+import { NavTabComponent } from './containers/nav-tab/nav-tab.component';
 
 
 @NgModule({
     declarations: [
-        ButtonComponent
+        ButtonComponent,
+        NavTabComponent
     ],
     exports: [
-        ButtonComponent
+        ButtonComponent,
+        NavTabComponent
     ],
     imports: [
         CommonModule,

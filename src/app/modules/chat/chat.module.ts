@@ -17,6 +17,14 @@ import { SideSectionComponent } from './containers/side-section/side-section.com
 import { SideSectionHeaderComponent } from './components/side-section-header/side-section-header.component';
 import { SideSectionBodyComponent } from './components/side-section-body/side-section-body.component';
 import {FormsModule} from "@angular/forms";
+import {SocketIoConfig, SocketIoModule} from "ngx-socket-io";
+import { RecentMessagesListComponent } from './components/recent-messages-list/recent-messages-list.component';
+import { RecentMessagesWidgetComponent } from './components/recent-messages-widget/recent-messages-widget.component';
+import { RecentCallsListComponent } from './components/recent-calls-list/recent-calls-list.component';
+import { RecentCallsWidgetComponent } from './components/recent-calls-widget/recent-calls-widget.component';
+import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
+
+const config: SocketIoConfig = { url: 'http://localhost:3000' };
 
 
 @NgModule({
@@ -36,11 +44,19 @@ import {FormsModule} from "@angular/forms";
     SideSectionComponent,
     SideSectionHeaderComponent,
     SideSectionBodyComponent,
+    RecentMessagesListComponent,
+    RecentMessagesWidgetComponent,
+    RecentCallsListComponent,
+    RecentCallsWidgetComponent,
   ],
   imports: [
+    SocketIoModule.forRoot(config),
     CommonModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    RouterOutlet,
+    RouterLinkActive,
+    RouterLink
   ]
 })
 export class ChatModule { }

@@ -1,4 +1,8 @@
-.conversation-messages{
-  height: 80vh;
+.conversation-messages {
+  height: 78vh;
   overflow-y: scroll;
+  border-bottom: 2px #C0C0C0 solid;
+  background-color: #f5f5f5;
+  padding: 0 1rem;
+
 }

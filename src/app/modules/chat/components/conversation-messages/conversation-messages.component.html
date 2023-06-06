@@ -1,5 +1,5 @@
 <div class="conversation-messages">
-   <div *ngFor="let message of ['','','','','','','','','','','','','','','',]">
-     <chat-message></chat-message>
+   <div *ngFor="let message of conversation?.messages">
+     <chat-message [message]="message"></chat-message>
    </div>
 </div>

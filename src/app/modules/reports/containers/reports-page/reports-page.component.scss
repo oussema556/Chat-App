@@ -1,6 +1,14 @@
 .reports-page{
+  &__title{
+    padding: 2rem;
+  }
   &__list{
     margin: 1rem;
+  }
+  &__action-bar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
   }
   &__report{
     &:not(first-child){

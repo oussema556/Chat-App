@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {AuthService} from "../../../../core/services/auth/auth.service";
+import {AuthService} from "../../services/auth.service";
 import {Router} from "@angular/router";
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 
@@ -20,12 +20,12 @@ export class RegisterComponent {
     this.toggleConfirm=!this.toggleConfirm
   }
 
-  
-    
-  
+
+
+
   constructor(private auth: AuthService, private router: Router, private formBuilder:FormBuilder){
     this.registerForm= this.formBuilder.group({
-   
+
       email : new FormControl('', [Validators.required, Validators.email]),
       first_name: new FormControl('', [Validators.required]),
       last_name: new FormControl('', [Validators.required]),
@@ -43,9 +43,9 @@ export class RegisterComponent {
       validators: this.MustMatch('password', 'confirm')
     }
     );}
-  
 
-  
+
+
   get email() {
     return this.registerForm.get('email')?.value;
   }
@@ -67,9 +67,10 @@ export class RegisterComponent {
   }
 
   registerUser() {
-    let user: {first_name: any, last_name: any, email: any, password: any, confirm: any, phone_number:any }= {
-      first_name: this.first_name,
-      last_name: this.last_name,
+    let user: {name: any, surname: any,username:any, email: any, password: any, confirm: any, phone_number:any }= {
+      name: this.first_name,
+      surname: this.last_name,
+      username: this.first_name,
       email: this.email,
       password: this.password,
       confirm: this.confirm,
@@ -79,6 +80,7 @@ export class RegisterComponent {
       .subscribe(
         (res)=> {
           if(res) {
+            this.router.navigateByUrl("/login");
             console.log(res)
           }
         },
@@ -104,5 +106,6 @@ export class RegisterComponent {
     }
 
   }
+
 
 }

@@ -5,8 +5,13 @@
     </div>
 
     <div class="cl__contacts row gap-3 mt-5">
-        <div class="cl__card col-3" *ngFor="let contact of ['','','','','','','','']">
+        <div *ngIf="userFriends?.length>0">
+          <div class="cl__card col-3" *ngFor="let contact of userFriends">
             <app-contact-card [contact]="contact"></app-contact-card>
+          </div>
         </div>
+      <div *ngIf="userFriends?.length==0" class="cl__not-found">
+        <span>You Have Not friends</span>
+      </div>
     </div>
 </div>

@@ -1,0 +1,68 @@
+.activity-body{
+  color:black;
+  &__profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title{
+      width: 100%;
+      font-size: 16px;
+    }
+    &__name{
+      font-size: 16px;
+      color: black;
+      text-align: center;
+    }
+    &__image {
+      width: 48px;
+      height: auto;
+      position: relative;
+      margin: .5rem 0;
+
+      img {
+        border-radius: 8px;
+      }
+
+      &::before {
+        content: "";
+        left: -3px;
+        top: -3px;
+        position: absolute;
+        z-index: -1;
+        width: calc(100% + 6px);
+        height: calc(100% + 6px);
+        border-radius: 11px;
+        background: white;
+      }
+
+      &::after {
+        content: "";
+        left: -6px;
+        top: -6px;
+        position: absolute;
+        z-index: -2;
+        width: calc(100% + 12px);
+        height: calc(100% + 12px);
+        border-radius: 12px;
+        background: rgb(255, 245, 0);
+        background: linear-gradient(90deg, rgba(255, 245, 0, 1) 0%, rgba(180, 43, 166, 1) 100%);
+      }
+    }
+  }
+  &__media{
+    &__title{
+      color: black;
+      font-size: 16px;
+    }
+    &__grid{
+      margin: 0;
+    }
+    &__grid-item{
+      width: 56px;
+      height: auto;
+      border-radius: 8px;
+      border: 4px black solid;
+    }
+  }
+}

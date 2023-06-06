@@ -1,5 +1,5 @@
 export interface SenderModel{
-  id: string;
+  _id: string;
   image: string;
   name: string;
   profileUrl?: string;

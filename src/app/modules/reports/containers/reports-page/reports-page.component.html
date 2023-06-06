@@ -1,14 +1,19 @@
 <div class="reports-page">
-    <h1 class="reports-page__title">Your Reports</h1>
+  <h1 class="reports-page__title">Your Reports</h1>
 
-  <div class="reports-page__action-bar">
-    <shared-button [button]="reportBtn">
+  <div class="reports-page__action-bar mx-4">
+    <shared-button [button]="reportBtn" routerLink="/create-report">
     </shared-button>
   </div>
 
   <div class="reports-page__list">
-  <div *ngFor="let report of reports" class="reports-page__report">
-    <app-report-widget [report]="report"></app-report-widget>
+  <div *ngIf="appReports.length>0">
+    <div *ngFor="let report of appReports" class="reports-page__report">
+      <app-report-widget [report]="report"></app-report-widget>
+    </div>
   </div>
+    <div *ngIf="appReports.length==0" class="w-full h-full d-flex justify-content-center align-items-center">
+      <span>No Reports Available</span>
+    </div>
   </div>
 </div>

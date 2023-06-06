@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {ChatService} from "../../services/chat.service";
 
 @Component({
   selector: 'chat-conversation-footer',
@@ -7,13 +8,26 @@ import { Component } from '@angular/core';
 })
 export class ConversationFooterComponent {
 
+  content: string="";
 
 
+  @Input('conversationId') conversationId: string;
 
-
-
-  constructor() {
+  constructor(private chatService: ChatService) {
   }
+  onKey(event: any) { // without type info
+    this.content = event.target.value;
+  }
+  sendMessage(){
+    this.chatService.sendMessage(this.conversationId,this.content,null).subscribe(
+      res=>{
 
+        //console.log(res)
+      },
+      err => {
+        console.log(err)
+      }
+    );
+  }
 
   }

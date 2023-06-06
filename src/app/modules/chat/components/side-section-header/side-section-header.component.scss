@@ -1,0 +1,31 @@
+.sc-header{
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'inter', sans serif;
+    &__image{
+      width: 48px;
+      border-radius: 50%;
+      height: 48px;
+      overflow: hidden;
+      border: 1px black solid;
+      margin-right: 1rem;
+      img{
+        object-fit: contain;
+        height: 48px;
+      }
+    }
+&__wiw{
+  display: flex;
+  align-items: center;
+border-bottom: 2px #C0C0C0 solid;
+  width: 100%;
+  padding-bottom: .5rem;
+}
+  &__title{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+  }
+}
